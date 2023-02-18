@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints alpha in lower and upper case
+ *
  * Return Always 0
  */
+int main(void)
 {
 	char ch;
 
@@ -14,5 +17,5 @@
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
