@@ -1,4 +1,4 @@
-#INCLUDE <stdio.h>
+#include <stdio.h>
 /**
  * main - prints alpha in lower case
  * Return: Always 0
@@ -11,6 +11,6 @@ int main(void)
 	{
 		putchar (lc);
 	}
-	putchar('ln');
+	putchar('\n');
 	return (0);
 }
