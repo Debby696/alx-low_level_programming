@@ -1,21 +1,18 @@
-#include "main.h"
+#include "mai.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_last_digit - prints the last digit
+ * @n: the number
+ * Return: value of the last digit
  */
-int main(void)
+int print_last_digit(int n)
 {
-	int r;
+	int ld = n % 10;
 
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
+	if (ld < 0)
+		ld *= -1;
+
+	_putchar(ld + '0');
+
 	return (0);
 }
