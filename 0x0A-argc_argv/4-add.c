@@ -3,12 +3,12 @@
 	#include <ctype.h>
 	#include <string.h>
 	/**
-	 * check_num - check - string there are digit
+	 * check_num - check - strings there are digits
 	 * @str: array str
 	 *
 	 * Return: Always 0 (Success)
 	 */
-int check_num(char *str)
+	int check_num(char *str)
 	{
 		/*Declaring variables*/
 		unsigned int count;
@@ -32,7 +32,7 @@ int check_num(char *str)
 
 
 	/**
-	 * main - Print the name of the program
+	 * main - Prints the name of the program
 	 * @argc: Count arguments
 	 * @argv: Arguments
 	 *
