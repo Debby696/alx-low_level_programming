@@ -10,9 +10,12 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	size_t s1_len = (s1 != NULL) ? strlen(s1) : 0;
-	size_t s2_len = (s2 != NULL) ? strlen(s2) : 0;
-	size_t result_len = (n >= s2_len) ? s1_len + s2_len : s1_len + n;
+	char *result;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
+
+	size_t len1 = (len1 != NULL) ? strlen(len1) : 0;
+	size_t len2 = (len2 != NULL) ? strlen(len2) : 0;
+	size_t result_len = (n >= len2) ? len1 + len2 : len1 + n;
 	char *result = (char *) malloc(result_len + 1);
 
 	if (result == NULL)
