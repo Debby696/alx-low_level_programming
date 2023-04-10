@@ -6,19 +6,24 @@
  * print_binary - function that prints the binary representation of a number
  * @n: the number to print
  */
+
 void print_binary(unsigned long int n)
 {
-	int i = 0;
-	unsigned long int current = n;
-	unsigned int len = 0;
+	int i, count = 0;
+	unsigned long int num;
 
-	while (n >= 2)
+	for (i = 63; i >= 0; i--)
 	{
-		current = current  >> 1;
-		len++;
+		num = n >> i;
+		if (num & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
 	}
-	for (i = (int)len; i >= 0; i--)
-	{
-		_putchar(n & (1u << i) ? '0' : '1');
-	}
-}	
+	if (!count)
+		_putchar('0');
+}
+
