@@ -8,8 +8,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	len = 0;
-       	int i = 0; unsigned long int current = n;
+	int i = 0;
+	unsigned long int current = n;
+	unsigned int len = 0;
 
 	while (n >= 2)
 	{
@@ -20,6 +21,4 @@ void print_binary(unsigned long int n)
 	{
 		_putchar(n & (1u << i) ? '0' : '1');
 	}
-}
-		
-		
+}	
