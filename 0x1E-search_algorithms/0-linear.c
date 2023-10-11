@@ -7,20 +7,22 @@
  * @value:  value to search for
  * Return: -1 if value is not in array or array is NULL
  */
+
 int linear_search(int *array, size_t size, int value)
 {
-	size_t y;
+	size_t x;
 
 	if (array == NULL)
 	{
 		return (-1);
 	}
-	for (y = 0; y < size; y++)
+
+	for (x = 0; x < size; x++)
 	{
-		printf("value checked array[%li] =[%i]\n", y, array[y]);
-		if (array[y] == value)
+		printf("Value checked array[%li] = [%i]\n", x, array[x]);
+		if (array[x] == value)
 		{
-			return (y);
+			return (x);
 		}
 	}
 	return (-1);
