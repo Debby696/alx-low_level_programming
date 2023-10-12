@@ -14,6 +14,7 @@ size_t min(size_t a, size_t b);
  * Return: 1st index containing `value`, otherwise -1,
  * if value is not in array or array is NULL
  */
+
 int jump_search(int *array, size_t size, int value)
 {
 	size_t low, high, jump;
