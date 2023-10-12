@@ -1,17 +1,20 @@
 #include "search_algos.h"
+
 /**
- * binary_search - searches for a value in a sorted array of integers
- * using the Binary search algorithm
- *
- * @array: is a pointer to the first element of the array to search in
+ * binary_search - this searches for a value in an integer array using a binary
+ * search algorithm.
+ * @array: is a pointer to first element of array to seach
  * @size: is the number of elements in array
- * @value: is the value to search for
- * Return: -1,if value is not in array or array is NULL
+ * @value: is the  value to search for
+ *
+ * Return: index containing `value`, or -1 if `value` not found or
+ * `array` is NULL
  */
+
 int binary_search(int *array, size_t size, int value)
 {
 	int low, mid, high;
-	int y;
+	int x;
 
 	if (array == NULL)
 	{
@@ -25,9 +28,9 @@ int binary_search(int *array, size_t size, int value)
 	{
 		mid = (low + high) / 2;
 
-		printf("searching in array: ");
-		for (y = low; y <= high; y++)
-			printf("%i%s", array[y], y == high ? "\n" : ", ");
+		printf("Searching in array: ");
+		for (x = low; x <= high; x++)
+			printf("%i%s", array[x], x == high ? "\n" : ", ");
 
 		if (array[mid] < value)
 			low = mid + 1;
@@ -39,4 +42,3 @@ int binary_search(int *array, size_t size, int value)
 
 	return (-1);
 }
-
